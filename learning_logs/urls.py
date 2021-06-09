@@ -1,4 +1,5 @@
 """Определяет схемы URL для learning_logs."""
+
 from django.urls import path #path  необходима для связывания URL с представлениями(c views)
 
 from . import views #точка приказывает Python импортировать представления из каталога, в котором находится текущий модуль urls.py .т.е из (views.py)

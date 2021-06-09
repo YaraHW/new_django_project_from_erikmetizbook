@@ -4,10 +4,12 @@ from .forms import TopicForm,EntryForm
 from django.contrib.auth.decorators import login_required
 from django.http import Http404
 
+
 # Create your views here.
 def index(request):
     """Домашняя страница приложения Learning Log"""
     return render(request, 'learning_logs/index.html')
+
 
 @login_required
 def topics(request):
